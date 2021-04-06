@@ -1,0 +1,33 @@
+/* component/amount/amount.wxss */
+
+.wrap {
+  width: 320rpx;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+}
+
+.wrap .btn {
+  width: 70rpx;
+  height: 60rpx;
+  line-height: 30rpx;
+  background-color: #f7f7f7;
+  text-align: center;
+  border-radius: 0;
+  color: #333;
+}
+
+.btn::after{
+  border: none;
+}
+
+.wrap input {
+  width: 90rpx;
+  background-color: #f7f7f7;
+  height: 60rpx;
+  color: #333;
+  font-size: 24rpx;
+  text-align: center;
+  border: none;
+  margin: 0 2rpx;
+}

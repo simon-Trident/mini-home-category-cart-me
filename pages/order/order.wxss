@@ -1,0 +1,112 @@
+/* pages/order/order.wxss */
+.order{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title{
+  margin-top: 20rpx;
+  padding: 20rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  border-bottom: 2rpx solid #e8e8ed;
+  background-color: #fff;
+}
+
+.product-item{
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 6rpx 0;
+  margin-bottom: 20rpx;
+}
+
+.product-cover{
+  width: 200rpx;
+  height: 200rpx;
+  padding: 0 30rpx;
+  overflow: hidden;
+}
+
+.product-cover image{
+  width: 100%;
+  height: 100%;
+  border: 0 none;
+  vertical-align: top;
+}
+
+.product-info{
+  min-height: 200rpx;
+  box-sizing: border-box;
+  padding: 0 20rpx 16rpx 20rpx;
+  overflow: hidden;
+  border-bottom: 2rpx solid #e8e8ed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-title{
+  text-overflow: ellipsis;
+  height: 80rpx;
+  overflow: hidden;
+  margin-top: 16rpx;
+  color: #333;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.product-des{
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-des .price{
+  color: #e93b3d;
+  font-size: 30rpx;
+}
+
+.product-des .total{
+  color: #aaa;
+  font-size: 28rpx;
+}
+
+.payment{
+  background-color: #fff;
+  padding: 20rpx;
+}
+
+.payment .payment-item{
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+
+.payment-item .price, .payment-total .price{
+  color: #e93b3d;
+}
+
+.payment-total{
+  border-top: 2rpx solid #e8e8ed;
+  text-align: right;
+  font-size: 32rpx;
+  padding: 20rpx 0;
+}
+
+.pay-btn{
+  background-color: #fff;
+  margin-top: 40rpx;
+  padding: 20rpx;
+}
+
+.pay-btn button{
+  border: none;
+  background-color: #1aad19;
+  color: #fff;
+  font-size: 32rpx;
+  padding: 10rpx 0;
+}

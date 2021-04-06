@@ -1,0 +1,80 @@
+/* pages/list/list.wxss */
+
+.prolist {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.prolist-item {
+  padding: 6rpx 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  background-color: #fff;
+}
+
+.prolist-cover {
+  width: 35%;
+  padding: 0 30rpx;
+  height: 200rpx;
+  overflow: hidden;
+}
+
+.prolist-cover image {
+  width: 200rpx;
+  height: 200rpx;
+  border: 0 none;
+  vertical-align: top;
+}
+
+.prolist-info {
+  width: 65%;
+  min-height: 240rpx;
+  box-sizing: border-box;
+  padding: 0 20rpx 16px 20rpx;
+  overflow: hidden;
+  border-bottom: 2rpx solid #e8e8ed;
+}
+
+.prolist-title {
+  height: 80rpx;
+  overflow: hidden;
+  margin-top: 16rpx;
+  color: #333;
+  font-size: 28rpx;
+}
+
+.prolist-price {
+  margin-top: 26rpx;
+  display: inline-block;
+  height: 36rpx;
+  color: #e93b3d;
+  min-width: 80rpx;
+}
+
+.prolist-other {
+  font-size: 24rpx;
+  height: 40rpx;
+  padding: 12rpx 60rpx 4rpx 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  color: #999;
+}
+
+.prolist-comment {
+  margin-right: 10rpx;
+}
+
+.prolist-rate {
+  margin-right: 10rpx;
+}
+
+.endview {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #999;
+}

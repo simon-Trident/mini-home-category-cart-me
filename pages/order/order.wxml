@@ -1,0 +1,37 @@
+<!--pages/order/order.wxml-->
+<view class="order">
+  <view class="title">自营</view>
+  <block wx:for="{{accountInfo.shoppingList}}" wx:key="index">
+    <view class="product-item">
+      <view class="product-cover">
+        <image mode="aspectFit" src="{{item.loopImgUrl[0]}}"></image>
+      </view>
+      <view class="product-info">
+        <view class="product-title"><text>{{item.title}}</text></view>
+        <view class="product-des">
+          <text class="price">¥ {{item.price}}</text>
+          <text class="total">x {{item.total}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+
+  <view class="payment">
+    <view class="payment-item">
+      <text>商品金额</text>
+      <text class="price">¥{{accountInfo.totalMoney}}</text>
+    </view>
+    <view class="payment-item">
+      <text>运费</text>
+      <text class="price">+¥0.00</text>
+    </view>
+
+    <view class="payment-total">
+      实付金额:<text class="price">¥{{accountInfo.totalMoney}}</text>
+    </view>
+  </view>
+
+  <view class="pay-btn">
+    <button bindtap="handleGetOpenId">微信支付</button>
+  </view>
+</view>

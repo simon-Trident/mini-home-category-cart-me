@@ -1,0 +1,28 @@
+<!--component/countcell/countcell.wxml-->
+
+<view class="popup-dom" hidden="{{hideSelectItem}}">
+  <view class="pop-main">
+    <view class="pop-header">
+      <view class="img">
+        <image src="{{partData.loopImgUrl[0]}}"></image>
+      </view>
+
+      <view class="info">
+        <text class="price">¥ {{partData.price}}</text>
+        <text class="count">已选 {{partData.count}}件</text>
+      </view>
+      <text data-target="self" catchtap="hideView">X</text>
+    </view>
+
+    <view class="pop-body">
+      <text>数量</text>
+      <view class="amount">
+        <amount bind:handleInput="getCount" count="{{partData.count}}"></amount>
+      </view>
+    </view>
+
+    <view class="pop-btn">
+      <button catchtap="handleAddToCart">加入购物车</button>
+    </view>
+  </view>
+</view>

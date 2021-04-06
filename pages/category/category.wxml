@@ -1,0 +1,35 @@
+<!--pages/category/category.wxml-->
+
+<view class="category">
+  <!-- 左侧 -->
+  <scroll-view class="nav-left" scroll-y="true">
+    <block wx:for="{{navLeftItems}}" wx:key="index">
+      <view class="nav-left-items {{curIndex==index ? 'nav-left-items-active' : ''}}" 
+      data-index="{{index}}"
+      bindtap="switchTab">{{item}}</view>
+    </block>
+  </scroll-view>
+
+  <!-- 右侧 -->
+  <scroll-view class="nav-right" scroll-y="true">
+    <view wx:if="{{navRightItems[curIndex]}}" style="padding-bottom:10px;"></view>
+    <block 
+    wx:for="{{navRightItems[curIndex]}}" 
+    wx:key="index" 
+    wx:for-index="idx" 
+    wx:for-item="itemCategory">
+      <view class="ms-category">
+        <view class="title">{{itemCategory.title}}</view>
+        <view class="ms-gategory-view">
+          <block wx:for="{{itemCategory.desc}}" wx:key="index" wx:for-item="descItem">
+            <view class="ms-category-style" bindtap="showListView" data-txt="{{descItem.text}}">
+              <image class="style-img" src="{{descItem.img}}" mode="aspectFill"></image>
+              <text class="style-text">{{descItem.text}}</text>
+            </view>
+          </block>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+
+</view>

@@ -1,0 +1,55 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail">
+  <!-- 图片轮播 -->
+  <view class="slider">
+    <swiper
+    indicator-dots="true"
+    indicator-color="rgba(255, 255, 255, .6)"
+    indicator-active-color="#e93b3d"
+    circular="{{circular}}"
+    autoplay="{{autoplay}}"
+    interval="{{interval}}"
+    style="height:820rpx;">
+    <block wx:for="{{partData.loopImgUrl}}" wx:key="index">
+      <swiper-item>
+        <image class="swiper-item" src="{{item}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  </view>
+
+  <!-- 商品信息 -->
+  <view class="proinfo">
+    <view class="text-wrap">
+      <text>{{partData.title}}</text>
+    </view>
+    <view class="price-wrap">
+      <text>{{partData.price}}</text>
+    </view>
+  </view>
+
+  <!-- 支付 -->
+  <infocell title="支付" desc="{{baitiaoSelectItem.desc}}" bind:handlePopView="handleBaitiaoView"></infocell>
+
+  <!-- 已选 -->
+  <infocell title="已选" desc="{{partData.count}}件" bind:handlePopView="handleCountView"></infocell>
+
+  <!-- 白条分期弹框 -->
+  <IOU bind:updateSelect="handleUpdate" baitiao="{{baitiao}}" hideBaitiao="{{hideBaitiao}}"></IOU>
+
+  <!-- 选择商品弹窗 -->
+  <countcell bind:handleAddToCart="addToCart" bind:onHandleInput="updateCount" partData="{{partData}}" hideSelectItem="{{hideSelectItem}}"></countcell>
+
+  <!-- 加入购物车 -->
+  <view class="btn-bar">
+    <view class="icon-cart" bindtap="handleCartView">
+      <text class="badge" wx:if="{{badgeCount > 0}}">{{badgeCount}}</text>
+      <image src="/image/myIcon/cart.png"></image>
+      <text>购物车</text>
+    </view>
+    <view class="cart-btn">
+      <button bindtap="addToCart" style="width: 100%;">加入购物车</button>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,159 @@
+/* pages/Home/Home.wxss */
+/* 头部 */
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60rpx;
+}
+
+.widgets-img {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.search .scan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10%;
+}
+
+.search .search-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  border-radius: 10rpx;
+  background-color: #fbf9fe;
+  color: skyblue;
+  padding: 5rpx;
+}
+
+.search .search-input .search-icon {
+  margin-right: 20rpx;
+  width: 36rpx;
+  height: 36rpx;
+}
+
+/* 轮播 */
+.content-scroll {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+}
+
+.indicator-wrap {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-item {
+  display: block;
+  width: 100%;
+  height: 325rpx;
+}
+
+/* 图标分类 */
+.logos {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding-top: 20rpx;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #fff;
+}
+
+.logoinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.logotext {
+  color: #aaa;
+  font-size: 22rpx;
+}
+
+/* 掌上秒杀 */
+
+.flash-container {
+  box-sizing: border-box;
+  padding: 20rpx;
+  margin-top: 20rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flash-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.flash-sale {
+  width: 180rpx;
+  height: 40rpx;
+}
+
+.flash-more {
+  height: 40rpx;
+}
+
+.flash-more text {
+  margin-right: 2rpx;
+  font-size: 22rpx;
+  color: #aaa;
+}
+
+.flash-more image {
+  width: 22rpx;
+  height: 22rpx;
+}
+
+/* 可滚动区域 */
+.flash-scroll {
+  width: 100%;
+  margin-top: 10rpx;
+  white-space: nowrap;
+}
+
+.flash-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rpx;
+}
+
+.flash-column image {
+  width: 170rpx;
+  height: 170rpx;
+}
+
+.flash-column text {
+  font-size: 32rpx;
+  color: #ff0000;
+  margin-top: 10rpx;
+}
+
+/* 底部样式 */
+.page-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.page-row .page-image {
+  min-width: 240rpx;
+  max-width: 375rpx;
+  min-height: 202rpx;
+  max-height: 292rpx;
+}

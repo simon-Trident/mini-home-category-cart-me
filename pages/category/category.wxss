@@ -1,0 +1,82 @@
+/* pages/category/category.wxss */
+/* 分类样式 */
+.category {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.nav-left {
+  background-color: #f8f8f8;
+  width: 24%;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.nav-right {
+  background-color: #fff;
+  width: 76%;
+  height: 100%;
+}
+
+/* 去掉滚动条 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.nav-left-items {
+  font-size: 28rpx;
+  color: #333;
+  background-color: #fff;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+/* 选中样式 */
+.nav-left-items-active {
+  background-color: #f9f9f9;
+  color: #e93b3d;
+  font-size: 36rpx;
+}
+
+/* 右侧样式 */
+.ms-category {
+  margin: 40rpx 16rpx 0
+}
+
+.ms-gategory-view {
+  overflow: hidden;
+  padding: 20rpx 2rpx 0;
+}
+
+.ms-category .title {
+  font-size: 28rpx;
+  height: 60rpx;
+  line-height: 30rpx;
+  font-weight: 700;
+  color: #080808;
+}
+
+.ms-category-style {
+  width: 32.8%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.style-img {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.style-text {
+  text-align: center;
+  font-size: 24rpx;
+  color: #686686;
+  margin-top: 10rpx;
+  height: 70rpx;
+}

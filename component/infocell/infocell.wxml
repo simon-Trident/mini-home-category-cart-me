@@ -1,0 +1,7 @@
+<!--component/infocell/infocell.wxml-->
+
+<view class="wrap">
+  <text class="title">{{title}}</text>
+  <text class="desc">{{desc}}</text>
+  <text class="icon" bindtap="popView">...</text>
+</view>
